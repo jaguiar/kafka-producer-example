@@ -28,9 +28,6 @@ Hortonworks Sandbox can be used, refer to http://hortonworks.com/hadoop/kafka/ f
 
 Settings
 --------------
-* Kafka and/or Zookeeper use hostname resolution so even if you use an IP address in the configuration files, you will encounter errors => Add a line in your host file to map the server hostname with its IP.
-    * Windows: C:\WINDOWS\system32\drivers\etc\hosts
-    * Linux: /etc/hosts
 * When you set up your kafka, you should create a chroot folder for it in Zookeeper (note that you will have to provide the chroot folder name to all consumers then, eg. "localhost:9092/kafka"). To do so:
     * Stop Kafka
     * Edit <KAFKA_HOME>/config/server.properties: append "/kafka" (or any chroot folder name) to the urls to specify the kafka znodes (property "zookeeper.connect"), e.g. 
@@ -97,7 +94,7 @@ Again, this command assumes that:
 Troubleshooting
 --------------
 If you encounter the following error
-> 17:14:23.989 [main] ERROR kafka.producer.SyncProducer - Producer connection to localhost:9092 unsuccessful
+> 17:14:23.989 [main] ERROR kafka.producer.SyncProducer - Producer connection to xxxx:9092 unsuccessful
 > 
 java.net.ConnectException: Connection refused: connect
 > 
@@ -141,7 +138,9 @@ at org.yaourtcorp.kafka.producer.example.EventsProducer.execute(EventsProducer.j
 >
 at org.yaourtcorp.kafka.producer.example.EventsProducer.main(EventsProducer.java:43) [kafka-producer-example-0.0.1-SNAPSHOT.jar:na]
 
-* #####check your hosts file !
+* #####check your hosts file ! (Add a line in your host file to map the server hostname with its IP).
+    * Windows: C:\WINDOWS\system32\drivers\etc\hosts
+    * Linux: /etc/hosts
 * check that your zookeper and kafka are running
 * check your kafka and zookeeper ports !
 
