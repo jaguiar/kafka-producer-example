@@ -148,10 +148,13 @@ Notes
 --------------
 Ok, I admit it, since I wanted to play with some new features of Spring 4+ (like [@Conditional]), this project is just completely overkill. 
 
+As stated by [Jonathan Winandy in his presentation at OWF] in real life, messages sent to Kafka should NOT be encoded with Json, but with something that is CPU and space efficient.
+
 **Free example, Hell Yeah! ;-P**
 
 [Apache Zookeeper]:http://zookeeper.apache.org/
 [Apache Kafka]:http://kafka.apache.org/
 [Java]:https://www.java.com/
 [@Conditional]:http://docs.spring.io/spring/docs/current/javadoc-api/org/springframework/context/annotation/Conditional.html
+[Jonathan Winandy in his presentation at OWF]:http://fr.slideshare.net/jwinandy/data-encoding-and-metadata-for-streams
 
