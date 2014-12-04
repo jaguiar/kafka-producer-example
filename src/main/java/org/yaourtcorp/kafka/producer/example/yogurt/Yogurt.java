@@ -2,7 +2,9 @@ package org.yaourtcorp.kafka.producer.example.yogurt;
 
 import org.joda.time.DateTime;
 import org.yaourtcorp.kafka.producer.example.EventObject;
-
+/*
+ * Just a plain yogurt object
+ */
 public class Yogurt implements EventObject {
 
 	private String uuid;
