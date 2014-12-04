@@ -1,7 +1,7 @@
 package org.yaourtcorp.kafka.producer.example.yogurt;
 
 /**
- * YogurtEventsProducer class simulates the real time yogurts event generation.
+ * YogurtEventsProducer class simulates the real time yogurts events generation.
  *
  */
 import org.springframework.stereotype.Component;
