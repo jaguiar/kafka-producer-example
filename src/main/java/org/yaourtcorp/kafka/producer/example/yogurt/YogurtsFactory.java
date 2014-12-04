@@ -8,7 +8,9 @@ import org.kohsuke.randname.RandomNameGenerator;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 import org.yaourtcorp.kafka.producer.example.EventsFactory;
-
+/*
+ * Factory of yogurts: create new yogurt objects with an unique cool name for each! (yeah, this example is stupid)
+ */
 @Component(value="eventsFactory")
 public class YogurtsFactory implements EventsFactory<Yogurt>{
 
