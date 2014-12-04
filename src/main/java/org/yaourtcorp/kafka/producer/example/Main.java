@@ -2,6 +2,9 @@ package org.yaourtcorp.kafka.producer.example;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
+/*
+ * Do nothing, just load spring config
+ */
 public class Main {
 
 	public static void main(String[] args) throws Exception {
